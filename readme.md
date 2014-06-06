@@ -2,7 +2,7 @@
 
 Ceci est le repository test du groupe Rock It.
 
-Il est destiné à servir de projet test pour le groupe afin de tester la manière dont GitHub fonctionne.
+Il est destiné à servir de projet test pour le groupe afin que ce dernier puisse mieux apréhender la manière dont GitHub fonctionne.
 
 ## Le Groupe Rock It
 

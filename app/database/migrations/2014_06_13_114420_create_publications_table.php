@@ -11,9 +11,10 @@ class CreatePublicationsTable extends Migration {
 			$table->increments('id');
 			$table->integer('platform_id')->unsigned();
 			$table->integer('event_id')->unsigned();
-			$table->string('url', 300);
+			$table->string('url', 2000);
 			$table->timestamps();
-			$table->softDeletes();
+			$table->string('external_id');
+			$table->text('external_infos')->nullable();
 		});
 	}
 

@@ -13,6 +13,7 @@ class CreateAddressesTable extends Migration {
 			$table->string('npa', 10);
 			$table->string('city', 100);
 			$table->string('country', 100)->nullable();
+			$table->softDeletes();
 		});
 	}
 

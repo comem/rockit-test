@@ -9,7 +9,11 @@ class CreatePlatformsTable extends Migration {
 	{
 		Schema::create('platforms', function(Blueprint $table) {
 			$table->increments('id');
-			$table->string('name', 100);
+			$table->string('name', 50);
+			$table->string('client_id')->nullable();
+			$table->text('client_secret')->nullable();
+			$table->text('api_infos')->nullable();
+			$table->softDeletes();
 		});
 	}
 

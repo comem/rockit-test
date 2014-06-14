@@ -12,7 +12,8 @@ class CreateTicketsTable extends Migration {
 			$table->integer('ticket_category_id')->unsigned();
 			$table->integer('event_id')->unsigned();
 			$table->integer('amount');
-			$table->string('comment', 200)->nullable();
+			$table->string('comment_de', 200)->nullable();
+			$table->integer('quantity_sold')->nullable();
 		});
 	}
 

@@ -9,11 +9,12 @@ class CreateImagesTable extends Migration {
 	{
 		Schema::create('images', function(Blueprint $table) {
 			$table->increments('id');
-			$table->string('name_de', 100)->nullable();
+			$table->string('alt_de', 100)->nullable();
 			$table->string('caption_de', 200)->nullable();
-			$table->string('source', 400);
+			$table->string('source', 100);
 			$table->timestamps();
-			$table->integer('artist_id')->unsigned();
+			$table->integer('artist_id')->unsigned()->nullable();
+			$table->softDeletes();
 		});
 	}
 

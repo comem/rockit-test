@@ -9,10 +9,11 @@ class CreateRessourcesTable extends Migration {
 	{
 		Schema::create('ressources', function(Blueprint $table) {
 			$table->increments('id');
-			$table->string('model', 50);
-			$table->string('function', 400);
+			$table->string('model', 100);
+			$table->string('function', 200);
 			$table->timestamps();
 			$table->softDeletes();
+			$table->unique(array('model','function'));
 		});
 	}
 

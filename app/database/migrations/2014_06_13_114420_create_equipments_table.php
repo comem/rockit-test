@@ -9,7 +9,8 @@ class CreateEquipmentsTable extends Migration {
 	{
 		Schema::create('equipments', function(Blueprint $table) {
 			$table->increments('id');
-			$table->string('name_de', 200);
+			$table->string('name_de', 100);
+			$table->softDeletes();
 		});
 	}
 

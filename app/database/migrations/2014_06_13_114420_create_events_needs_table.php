@@ -9,9 +9,9 @@ class CreateEventsNeedsTable extends Migration {
 	{
 		Schema::create('events_needs', function(Blueprint $table) {
 			$table->increments('id');
-			$table->integer('nb_people');
 			$table->integer('function_id')->unsigned();
 			$table->integer('event_id')->unsigned();
+			$table->integer('nb_people');
 		});
 	}
 

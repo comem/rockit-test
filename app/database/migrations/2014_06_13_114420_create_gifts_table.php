@@ -3,18 +3,19 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateTicketCategoriesTable extends Migration {
+class CreateGiftsTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('ticket_categories', function(Blueprint $table) {
+		Schema::create('gifts', function(Blueprint $table) {
 			$table->increments('id');
-			$table->string('name_de', 50);
+			$table->string('name_de', 100);
+			$table->softDeletes();
 		});
 	}
 
 	public function down()
 	{
-		Schema::drop('ticket_categories');
+		Schema::drop('gifts');
 	}
 }

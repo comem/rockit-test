@@ -14,13 +14,16 @@ class CreateEventsTable extends Migration {
 			$table->integer('image_id')->unsigned();
 			$table->timestamp('ending_date_hour')->nullable();
 			$table->time('opening_doors')->nullable();
-			$table->string('title', 200);
+			$table->string('title_de', 200);
 			$table->integer('nb_meal');
 			$table->integer('nb_vegan_meal');
-			$table->string('nb_places');
 			$table->text('meal_notes')->nullable();
+			$table->string('nb_places')->default('180');
+			$table->boolean('followed_by_private');
+			$table->string('contact_src')->nullable();
 			$table->text('notes')->nullable();
 			$table->timestamps();
+			$table->timestamp('published_at')->nullable();
 		});
 	}
 

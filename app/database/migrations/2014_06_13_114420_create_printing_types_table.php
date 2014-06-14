@@ -3,19 +3,19 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateLanguagesTable extends Migration {
+class CreatePrintingTypesTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('languages', function(Blueprint $table) {
+		Schema::create('printing_types', function(Blueprint $table) {
 			$table->increments('id');
-			$table->string('locale', 100);
 			$table->string('name_de', 100);
+			$table->softDeletes();
 		});
 	}
 
 	public function down()
 	{
-		Schema::drop('languages');
+		Schema::drop('printing_types');
 	}
 }

@@ -2,26 +2,28 @@
 
 class DatabaseSeeder extends Seeder {
 
-	/**
-	 * Run the database seeds.
-	 *
-	 * @return void
-	 */
-	public function run()
-	{
-		Eloquent::unguard();
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Eloquent::unguard();
 
-		$this->call('InstrumentsTableSeeder');
-		$this->call('GenresTableSeeder');
-		$this->call('MusiciansTableSeeder');
-	}
+        $this->call('InstrumentsTableSeeder');
+        $this->command->info('Instruments table seeded!');
+        $this->call('GenresTableSeeder');
+        $this->command->info('Genres table seeded!');
+        $this->call('MusiciansTableSeeder');
+    }
 
 }
 
 
 /**
 *
-*	seed des tables péripheriques
+*   seed des tables péripheriques
 *
 */
 
@@ -32,7 +34,7 @@ class InstrumentsTableSeeder extends Seeder {
     {
         DB::table('instruments')->delete();
 
-        User::create(array('name_de' => 'Flöte'));
+        Instrument::create(array('name_de' => 'Flöte'));
     }
 }
 // Genres
@@ -40,9 +42,9 @@ class GenresTableSeeder extends Seeder {
 
     public function run()
     {
-        DB::table('Genres')->delete();
+        DB::table('genres')->delete();
 
-        User::create(array('name_de' => 'rock'));
+        Genre::create(array('name_de' => 'rock'));
     }
 }
 
@@ -53,21 +55,21 @@ class MusiciansTableSeeder extends Seeder {
     {
         DB::table('musicians')->delete();
 
-        User::create(array('fisrt_name' => 'Karl',
-        					'las_name'=> 'Legerfeld',
-        					'stagename'=>'Bonzai',
-        					));
+        Musician::create(array('fisrt_name' => 'Karl',
+                            'las_name'=> 'Legerfeld',
+                            'stagename'=>'Bonzai',
+                            ));
     }
 }
 
-//Platforms		
+//Platforms     
 class PlatformsTableSeeder extends Seeder {
 
     public function run()
     {
         DB::table('platforms')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Platform::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -78,18 +80,18 @@ class TicketCategoriesTableSeeder extends Seeder {
     {
         DB::table('ticket_categories')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Ticket::create(array('email' => 'foo@bar.com'));
     }
 }
 
-//Equipments	
+//Equipments    
 class EquipmentsTableSeeder extends Seeder {
 
     public function run()
     {
         DB::table('equipments')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Equipment::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -100,7 +102,7 @@ class GiftsTableSeeder extends Seeder {
     {
         DB::table('gifts')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Gift::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -111,7 +113,7 @@ class EventTypesTableSeeder extends Seeder {
     {
         DB::table('event_types')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        EventType::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -122,7 +124,7 @@ class AddressesTableSeeder extends Seeder {
     {
         DB::table('addresses')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Address::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -133,7 +135,7 @@ class LanguagesTableSeeder extends Seeder {
     {
         DB::table('languages')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Language::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -144,7 +146,7 @@ class RessourcesTableSeeder extends Seeder {
     {
         DB::table('ressources')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Ressource::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -156,7 +158,7 @@ class PrintingsTypesTableSeeder extends Seeder {
     {
         DB::table('printings_types')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        PrintingType::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -167,26 +169,26 @@ class FunctionsTableSeeder extends Seeder {
     {
         DB::table('functions')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Function::create(array('email' => 'foo@bar.com'));
     }
 }
 
 /**
 *
 *
-*		seed des tables pouvant vivre seules 
+*       seed des tables pouvant vivre seules 
 *
 *
 **/
 
 // artist
-class ArtistssTableSeeder extends Seeder {
+class ArtistsTableSeeder extends Seeder {
 
     public function run()
     {
         DB::table('artists')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Artist::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -197,7 +199,7 @@ class ImagesTableSeeder extends Seeder {
     {
         DB::table('images')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Images::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -208,7 +210,7 @@ class LinksTableSeeder extends Seeder {
     {
         DB::table('links')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Link::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -219,7 +221,7 @@ class MembersTableSeeder extends Seeder {
     {
         DB::table('members')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Member::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -230,7 +232,7 @@ class GroupsTableSeeder extends Seeder {
     {
         DB::table('groups')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Group::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -238,7 +240,7 @@ class GroupsTableSeeder extends Seeder {
 /**
 *
 *
-*		Deuxième périphérie (définition de bob )
+*       Deuxième périphérie (définition de bob )
 *
 *
 **/
@@ -250,7 +252,7 @@ class ArtistsGenresTableSeeder extends Seeder {
     {
         DB::table('artists_genres')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        ArtistGenre::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -261,18 +263,18 @@ class PublicationsTableSeeder extends Seeder {
     {
         DB::table('publications')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Publication::create(array('email' => 'foo@bar.com'));
     }
 }
 
 //tickets
-class TicketssTableSeeder extends Seeder {
+class TicketsTableSeeder extends Seeder {
 
     public function run()
     {
         DB::table('tickets')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Ticket::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -283,7 +285,7 @@ class AttributionsTableSeeder extends Seeder {
     {
         DB::table('attributions')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Attribution::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -294,7 +296,7 @@ class OffersTableSeeder extends Seeder {
     {
         DB::table('offers')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Offer::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -305,7 +307,7 @@ class PrintingsTableSeeder extends Seeder {
     {
         DB::table('printings')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Printing::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -316,7 +318,7 @@ class FunctionMembersTableSeeder extends Seeder {
     {
         DB::table('function_member')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        FunctionMember::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -324,7 +326,7 @@ class FunctionMembersTableSeeder extends Seeder {
 /** 
 *
 *
-* 		Pivot tables 
+*       Pivot tables 
 *
 *
 **/
@@ -336,7 +338,7 @@ class EventNeedsTableSeeder extends Seeder {
     {
         DB::table('events_needs')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        EventNeed::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -347,7 +349,7 @@ class StaffsTableSeeder extends Seeder {
     {
         DB::table('staffs')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Staff::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -358,7 +360,7 @@ class GroupRessourcesTableSeeder extends Seeder {
     {
         DB::table('group_ressources')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        GroupRessource::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -369,7 +371,7 @@ class ArtistMusicianTableSeeder extends Seeder {
     {
         DB::table('artists_musicains')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        ArtistMusician::create(array('email' => 'foo@bar.com'));
     }
 }
 
@@ -380,6 +382,6 @@ class PerfomrmersTableSeeder extends Seeder {
     {
         DB::table('performers')->delete();
 
-        User::create(array('email' => 'foo@bar.com'));
+        Performer::create(array('email' => 'foo@bar.com'));
     }
 }

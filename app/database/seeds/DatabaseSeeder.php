@@ -11,7 +11,9 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-		// $this->call('UserTableSeeder');
+		$this->call('InstrumentsTableSeeder');
+		$this->call('GenresTableSeeder');
+		$this->call('MusiciansTableSeeder');
 	}
 
 }
@@ -38,7 +40,7 @@ class GenresTableSeeder extends Seeder {
 
     public function run()
     {
-        DB::table('users')->delete();
+        DB::table('Genres')->delete();
 
         User::create(array('name_de' => 'rock'));
     }
@@ -227,17 +229,6 @@ class GroupsTableSeeder extends Seeder {
     public function run()
     {
         DB::table('groups')->delete();
-
-        User::create(array('email' => 'foo@bar.com'));
-    }
-}
-
-//members
-class MembersTableSeeder extends Seeder {
-
-    public function run()
-    {
-        DB::table('members')->delete();
 
         User::create(array('email' => 'foo@bar.com'));
     }

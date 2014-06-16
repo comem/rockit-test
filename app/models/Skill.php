@@ -2,9 +2,9 @@
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Function extends Eloquent {
+class Skill extends Eloquent {
 
-	protected $table = 'functions';
+	protected $table = 'skills';
 	public $timestamps = false;
 
 	use SoftDeletingTrait;

@@ -47,7 +47,7 @@ class Event extends Eloquent {
 
 	public function Function()
 	{
-		return $this->belongsToMany('Function');
+		return $this->belongsToMany('Skill');
 	}
 
 }

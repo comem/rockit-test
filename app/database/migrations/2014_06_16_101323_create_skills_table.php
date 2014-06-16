@@ -3,11 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateFunctionsTable extends Migration {
+class CreateSkillsTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('functions', function(Blueprint $table) {
+		Schema::create('skills', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('name_de', 200);
 			$table->softDeletes();
@@ -16,6 +16,6 @@ class CreateFunctionsTable extends Migration {
 
 	public function down()
 	{
-		Schema::drop('functions');
+		Schema::drop('skills');
 	}
 }

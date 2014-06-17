@@ -16,7 +16,7 @@ class Member extends Eloquent {
 		return $this->hasOne('Address');
 	}
 
-	public function Function()
+	public function Skill()
 	{
 		return $this->belongsToMany('Skill');
 	}

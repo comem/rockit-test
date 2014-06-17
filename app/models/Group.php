@@ -18,7 +18,7 @@ class Group extends Eloquent {
 
 	public function resources()
 	{
-		return $this->hasMany('Ressources');
+		return $this->hasMany('Ressource');
 	}
 
 	public function user()

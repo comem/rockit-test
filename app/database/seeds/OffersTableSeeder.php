@@ -1,13 +1,15 @@
 <?php
 
 use Rockit\Offer;
+use Rockit\Gift;
+use Rockit\Event;
 
 //offers
 class OffersTableSeeder extends Seeder {
 
     public function run()
     {
-        $gift = gift::all();
+        $gift = Gift::all();
         $event = Event::all();
 
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');

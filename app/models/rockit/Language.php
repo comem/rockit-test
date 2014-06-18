@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 class Language extends \Eloquent {
 
 	protected $table = 'languages';

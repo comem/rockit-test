@@ -1,6 +1,8 @@
 <?php
 
 use Rockit\Ticket;
+use Rockit\TicketCategory;
+use Rockit\Event;
 
 //tickets
 class TicketsTableSeeder extends Seeder {

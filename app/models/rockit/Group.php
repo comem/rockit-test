@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class Group extends \Eloquent {

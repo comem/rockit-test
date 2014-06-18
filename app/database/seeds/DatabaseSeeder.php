@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder {
         $this->call('TicketCategoriesTableSeeder');
         $this->command->info('Ticket Categories table seeded !');
         $this->call('EquipmentsTableSeeder');
-        $this->command->info('Eqûipments table seeded !');  
+        $this->command->info('Equipments table seeded !');  
         $this->call('GiftsTableSeeder');
         $this->command->info('Gifts table seeded !');
         $this->call('EventTypesTableSeeder');
@@ -33,8 +33,6 @@ class DatabaseSeeder extends Seeder {
         $this->command->info('Addresses table seeded !');
         $this->call('LanguagesTableSeeder');
         $this->command->info('Languages table seeded !');
-        $this->call('EquipmentsTableSeeder');
-        $this->command->info('Equipments table seeded !');
         $this->call('ResourcesTableSeeder');
         $this->command->info('Resources table seeded !');
         $this->call('PrintingsTypesTableSeeder');

@@ -1,6 +1,8 @@
 <?php
 
-//artists_musicains
+use rockit\Event;
+
+//artists_musicians
 class ArtistMusicianTableSeeder extends Seeder {
 
     public function run()

@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //Platforms		
 class PlatformsTableSeeder extends Seeder {
 

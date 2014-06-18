@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //events_needs
 class EventNeedsTableSeeder extends Seeder {
 

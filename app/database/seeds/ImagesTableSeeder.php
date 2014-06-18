@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //images
 class ImagesTableSeeder extends Seeder {
 

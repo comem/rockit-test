@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //instruments
 class InstrumentsTableSeeder extends Seeder {
 

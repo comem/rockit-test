@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 class RepresentersTableSeeder extends Seeder {
 
     public function run()

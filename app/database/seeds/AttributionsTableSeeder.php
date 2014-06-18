@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //attributions
 class AttributionsTableSeeder extends Seeder {
 

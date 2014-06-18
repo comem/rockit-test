@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //Equipments	
 class EquipmentsTableSeeder extends Seeder {
 

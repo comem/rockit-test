@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //languages
 class LanguagesTableSeeder extends Seeder {
 

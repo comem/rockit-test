@@ -1,6 +1,8 @@
 <?php
 
-//ressources
+use rockit\Event;
+
+//resources
  class ResourcesTableSeeder extends Seeder {
 
      public function run()

@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //member_skills
 class FulfillmentsTableSeeder extends Seeder {
 

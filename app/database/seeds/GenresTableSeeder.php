@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 // Genres
 class GenresTableSeeder extends Seeder {
 

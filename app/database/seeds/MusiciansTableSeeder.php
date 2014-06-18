@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //Muscicians
 class MusiciansTableSeeder extends Seeder {
 

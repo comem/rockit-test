@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //groups
 class GroupsTableSeeder extends Seeder {
 

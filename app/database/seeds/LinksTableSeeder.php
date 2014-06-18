@@ -1,5 +1,7 @@
 <?php
 
+use rockit\Event;
+
 //links
 class LinksTableSeeder extends Seeder {
 

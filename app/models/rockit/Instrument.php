@@ -1,13 +1,15 @@
 <?php
 
+namespace Rockit;
+
 class Instrument extends Eloquent {
 
 	protected $table = 'instruments';
 	public $timestamps = false;
 
-	public function artists()
+	public function lineups()
 	{
-		return $this->belongsToMany('Artist');
+		return $this->belongsToMany('Lineup');
 	}
 
 }

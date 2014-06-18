@@ -11,7 +11,7 @@ class Group extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function group_group()
+	public function groupParent()
 	{
 		return $this->hasOne('Group', 'childGroup_id');
 	}

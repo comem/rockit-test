@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 class Need extends Eloquent {
 
 	protected $table = 'needs';

@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class TicketCategory extends Eloquent {
@@ -13,7 +15,7 @@ class TicketCategory extends Eloquent {
 
 	public function events()
 	{
-		return $this->belongsToMany('Event');
+		return $this->belongsToMany('Event')->withPivot('ammount','comment_de','quantity_sold');
 	}
 
 }

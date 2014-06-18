@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 class Genre extends Eloquent {
 
 	protected $table = 'genres';

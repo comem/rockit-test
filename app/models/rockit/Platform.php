@@ -1,10 +1,12 @@
 <?php
 
+namespace Rockit;
+
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Equipment extends Eloquent {
+class Platform extends Eloquent {
 
-	protected $table = 'equipments';
+	protected $table = 'platforms';
 	public $timestamps = false;
 
 	use SoftDeletingTrait;
@@ -13,7 +15,7 @@ class Equipment extends Eloquent {
 
 	public function events()
 	{
-		return $this->belongsToMany('Event');
+		return $this->belongsToMany('Event')->withPivot('url');
 	}
 
 }

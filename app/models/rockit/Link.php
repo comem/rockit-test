@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 class Link extends Eloquent {
 
 	protected $table = 'links';

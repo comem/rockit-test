@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 class Attribution extends Eloquent {
 
 	protected $table = 'attributions';

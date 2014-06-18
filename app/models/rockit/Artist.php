@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class Artist extends Eloquent {
@@ -21,11 +23,6 @@ class Artist extends Eloquent {
 		return $this->belongsToMany('Genre');
 	}
 
-	public function instruments()
-	{
-		return $this->belongsToMany('Instrument');
-	}
-
 	public function images()
 	{
 		return $this->hasMany('Image');
@@ -38,7 +35,7 @@ class Artist extends Eloquent {
 
 	public function events()
 	{
-		return $this->belongsToMany('Event');
+		return $this->belongsToMany('Event')->withPivot('order','is_support','artist_hour_of_arrival');
 	}
 
 }

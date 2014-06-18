@@ -1,19 +1,21 @@
 <?php
 
+namespace Rockit;
+
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Platform extends Eloquent {
+class Address extends Eloquent {
 
-	protected $table = 'platforms';
+	protected $table = 'addresses';
 	public $timestamps = false;
 
 	use SoftDeletingTrait;
 
 	protected $dates = ['deleted_at'];
 
-	public function events()
+	public function members()
 	{
-		return $this->belongsToMany('Event');
+		return $this->belongsToMany('Member');
 	}
 
 }

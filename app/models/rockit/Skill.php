@@ -1,5 +1,7 @@
 <?php
 
+namespace Rockit;
+
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class Skill extends Eloquent {
@@ -18,7 +20,7 @@ class Skill extends Eloquent {
 
 	public function events()
 	{
-		return $this->belongsToMany('Event');
+		return $this->belongsToMany('Event')->withPivot('nb_people');
 	}
 
 	public function staffs()

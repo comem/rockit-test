@@ -4,8 +4,6 @@ namespace Rockit;
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-namespace Rockit;
-
 class Group extends \Eloquent {
 
 	protected $table = 'groups';

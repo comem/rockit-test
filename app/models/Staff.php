@@ -2,12 +2,11 @@
 
 class Staff extends Eloquent {
 
-	protected $table = 'staffs';
-	public $timestamps = false;
+    protected $table = 'staffs';
+    public $timestamps = false;
 
-	public function Function()
-	{
-		return $this->belongsToMany('Function');
-	}
+    public function skills() {
+        return $this->belongsToMany('Skill');
+    }
 
 }

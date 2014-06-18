@@ -2,28 +2,25 @@
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Function extends Eloquent {
+class Skill extends Eloquent {
 
-	protected $table = 'functions';
-	public $timestamps = false;
+    protected $table = 'functions';
+    public $timestamps = false;
 
-	use SoftDeletingTrait;
+    use SoftDeletingTrait;
 
-	protected $dates = ['deleted_at'];
+    protected $dates = ['deleted_at'];
 
-	public function Member()
-	{
-		return $this->belongsToMany('Member');
-	}
+    public function members() {
+        return $this->belongsToMany('Member');
+    }
 
-	public function Event()
-	{
-		return $this->belongsToMany('Event');
-	}
+    public function events() {
+        return $this->belongsToMany('Event');
+    }
 
-	public function Staff()
-	{
-		return $this->hasMany('Staff');
-	}
+    public function staffs() {
+        return $this->hasMany('Staff');
+    }
 
 }

@@ -4,26 +4,23 @@ use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
 class Member extends Eloquent {
 
-	protected $table = 'members';
-	public $timestamps = true;
+    protected $table = 'members';
+    public $timestamps = true;
 
-	use SoftDeletingTrait;
+    use SoftDeletingTrait;
 
-	protected $dates = ['deleted_at'];
+    protected $dates = ['deleted_at'];
 
-	public function Adress()
-	{
-		return $this->hasOne('Address');
-	}
+    public function adress() {
+        return $this->hasOne('Address');
+    }
 
-	public function Function()
-	{
-		return $this->belongsToMany('Function');
-	}
+    public function skills() {
+        return $this->belongsToMany('Skill');
+    }
 
-	public function Event()
-	{
-		return $this->belongsToMany('Event');
-	}
+    public function events() {
+        return $this->belongsToMany('Event');
+    }
 
 }

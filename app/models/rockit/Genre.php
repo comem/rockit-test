@@ -2,7 +2,7 @@
 
 namespace Rockit;
 
-class Genre extends Eloquent {
+class Genre extends \Eloquent {
 
 	protected $table = 'genres';
 	public $timestamps = false;

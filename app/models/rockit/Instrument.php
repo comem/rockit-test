@@ -2,7 +2,7 @@
 
 namespace Rockit;
 
-class Instrument extends Eloquent {
+class Instrument extends \Eloquent {
 
 	protected $table = 'instruments';
 	public $timestamps = false;

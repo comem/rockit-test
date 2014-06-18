@@ -2,7 +2,7 @@
 
 namespace Rockit;
 
-class Staff extends Eloquent {
+class Staff extends \Eloquent {
 
 	protected $table = 'staffs';
 	public $timestamps = false;

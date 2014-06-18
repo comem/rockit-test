@@ -2,7 +2,7 @@
 
 namespace Rockit;
 
-class Lineup extends Eloquent {
+class Lineup extends \Eloquent {
 
 	protected $table = 'lineups';
 	public $timestamps = false;

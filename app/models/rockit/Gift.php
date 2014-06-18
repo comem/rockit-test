@@ -4,7 +4,7 @@ namespace Rockit;
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Gift extends Eloquent {
+class Gift extends \Eloquent {
 
 	protected $table = 'gifts';
 	public $timestamps = false;

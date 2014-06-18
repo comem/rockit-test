@@ -4,7 +4,7 @@ namespace Rockit;
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Artist extends Eloquent {
+class Artist extends \Eloquent {
 
 	protected $table = 'artists';
 	public $timestamps = true;

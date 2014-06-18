@@ -4,7 +4,7 @@ namespace Rockit;
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class Member extends Eloquent {
+class Member extends \Eloquent {
 
 	protected $table = 'members';
 	public $timestamps = true;

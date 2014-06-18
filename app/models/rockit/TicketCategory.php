@@ -4,7 +4,7 @@ namespace Rockit;
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class TicketCategory extends Eloquent {
+class TicketCategory extends \Eloquent {
 
 	protected $table = 'ticket_categories';
 	public $timestamps = false;

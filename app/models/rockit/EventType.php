@@ -4,7 +4,7 @@ namespace Rockit;
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class EventType extends Eloquent {
+class EventType extends \Eloquent {
 
 	protected $table = 'event_types';
 	public $timestamps = false;

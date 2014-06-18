@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 
-class User extends Eloquent {
+class User extends \Eloquent {
 
 	protected $table = 'users';
 	public $timestamps = true;

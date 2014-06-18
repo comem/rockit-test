@@ -2,7 +2,7 @@
 
 namespace Rockit;
 
-class Attribution extends Eloquent {
+class Attribution extends \Eloquent {
 
 	protected $table = 'attributions';
 	public $timestamps = false;

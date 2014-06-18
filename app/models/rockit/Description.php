@@ -2,7 +2,7 @@
 
 namespace Rockit;
 
-class Description extends Eloquent {
+class Description extends \Eloquent {
 
 	protected $table = 'descriptions';
 	public $timestamps = false;

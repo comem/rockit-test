@@ -2,7 +2,7 @@
 
 namespace Rockit;
 
-class Link extends Eloquent {
+class Link extends \Eloquent {
 
 	protected $table = 'links';
 	public $timestamps = false;

@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Address;
 
 //addresses
 class AddressesTableSeeder extends Seeder {

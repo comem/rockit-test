@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\GroupResource;
 
 //group_ressources
 class GroupResourcesTableSeeder extends Seeder {

@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Offer;
 
 //offers
 class OffersTableSeeder extends Seeder {

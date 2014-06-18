@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Need;
 
 //events_needs
 class NeedsTableSeeder extends Seeder {

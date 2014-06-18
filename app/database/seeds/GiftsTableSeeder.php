@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Gift;
 
 //Gifts
 class GiftsTableSeeder extends Seeder {

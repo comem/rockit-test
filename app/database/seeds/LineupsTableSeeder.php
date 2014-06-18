@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Lineup;
 
 //artists_musicians
 class LineupsTableSeeder extends Seeder {

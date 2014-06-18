@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\EventType;
 
 //Event_types
 class EventTypesTableSeeder extends Seeder {

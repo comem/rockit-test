@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Description;
 
 //artists_genres
 class DescriptionTableSeeder extends Seeder {

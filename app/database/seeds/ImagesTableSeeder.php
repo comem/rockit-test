@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Image;
 
 //images
 class ImagesTableSeeder extends Seeder {

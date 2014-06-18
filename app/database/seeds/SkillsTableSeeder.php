@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Skill;
 
 //skills
 class SkillsTableSeeder extends Seeder {

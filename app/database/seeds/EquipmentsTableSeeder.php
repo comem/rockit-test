@@ -1,6 +1,6 @@
 <?php
 
-use rockit\Event;
+use Rockit\Equipment;
 
 //Equipments	
 class EquipmentsTableSeeder extends Seeder {

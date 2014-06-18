@@ -5,7 +5,7 @@ class Staff extends Eloquent {
 	protected $table = 'staffs';
 	public $timestamps = false;
 
-	public function Function()
+	public function skills()
 	{
 		return $this->belongsToMany('Skill');
 	}

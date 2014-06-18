@@ -11,17 +11,17 @@ class Member extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function Adress()
+	public function adress()
 	{
 		return $this->hasOne('Address');
 	}
 
-	public function Skill()
+	public function functions()
 	{
 		return $this->belongsToMany('Skill');
 	}
 
-	public function Event()
+	public function events()
 	{
 		return $this->belongsToMany('Event');
 	}

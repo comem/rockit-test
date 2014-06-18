@@ -17,7 +17,7 @@ class User extends Eloquent {
 		return $this->belongsTo('Group');
 	}
 
-	public function Language()
+	public function language()
 	{
 		return $this->belongsTo('Language');
 	}

@@ -11,17 +11,17 @@ class Skill extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function Member()
+	public function membersm()
 	{
 		return $this->belongsToMany('Member');
 	}
 
-	public function Event()
+	public function events()
 	{
 		return $this->belongsToMany('Event');
 	}
 
-	public function Staff()
+	public function staffs()
 	{
 		return $this->hasMany('Staff');
 	}

@@ -5,7 +5,7 @@ class Genre extends Eloquent {
 	protected $table = 'genres';
 	public $timestamps = false;
 
-	public function Artist()
+	public function artists()
 	{
 		return $this->belongsToMany('Artist');
 	}

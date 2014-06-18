@@ -1,1 +1,11 @@
-$table->unique( array('model','function') );
+
+Ressources: 
+
+$table->unique( array('verb','url') );
+
+
+Representer:
+
+$table->unique( array('phone','email') );
+
+

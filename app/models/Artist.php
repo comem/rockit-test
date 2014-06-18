@@ -11,32 +11,32 @@ class Artist extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function Link()
+	public function links()
 	{
 		return $this->hasMany('Link');
 	}
 
-	public function Genre()
+	public function genres()
 	{
 		return $this->belongsToMany('Genre');
 	}
 
-	public function Instrument()
+	public function instruments()
 	{
 		return $this->belongsToMany('Instrument');
 	}
 
-	public function Image()
+	public function images()
 	{
 		return $this->hasMany('Image');
 	}
 
-	public function Musician()
+	public function musicians()
 	{
 		return $this->belongsToMany('Musician');
 	}
 
-	public function Event()
+	public function events()
 	{
 		return $this->belongsToMany('Event');
 	}

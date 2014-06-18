@@ -11,7 +11,7 @@ class Address extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function Member()
+	public function members()
 	{
 		return $this->belongsToMany('Member');
 	}

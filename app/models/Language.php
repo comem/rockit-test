@@ -5,7 +5,7 @@ class Language extends Eloquent {
 	protected $table = 'languages';
 	public $timestamps = false;
 
-	public function User()
+	public function users()
 	{
 		return $this->hasMany('User');
 	}

@@ -11,7 +11,7 @@ class PrintingType extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function Event()
+	public function events()
 	{
 		return $this->belongsToMany('Event');
 	}

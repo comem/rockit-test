@@ -11,7 +11,7 @@ class Musician extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function Artist()
+	public function artists()
 	{
 		return $this->belongsToMany('Artist');
 	}

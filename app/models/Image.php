@@ -11,7 +11,7 @@ class Image extends Eloquent {
 
 	protected $dates = ['deleted_at'];
 
-	public function Artist()
+	public function artist()
 	{
 		return $this->belongsTo('Artist');
 	}

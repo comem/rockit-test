@@ -5,7 +5,7 @@ class Link extends Eloquent {
 	protected $table = 'links';
 	public $timestamps = false;
 
-	public function Artist()
+	public function artist()
 	{
 		return $this->belongsTo('Artist');
 	}

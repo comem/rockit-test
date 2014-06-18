@@ -1,6 +1,8 @@
 <?php
 
 use Rockit\Fulfillment;
+use Rockit\Member;
+use Rockit\Skill;
 
 //member_skills
 class FulfillmentsTableSeeder extends Seeder {

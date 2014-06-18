@@ -1,6 +1,8 @@
 <?php
 
 use Rockit\Printing;
+use Rockit\PrintingType;
+use Rockit\Event;
 
 //printings
  class PrintingsTableSeeder extends Seeder {

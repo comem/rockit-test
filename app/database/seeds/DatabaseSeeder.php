@@ -41,6 +41,8 @@ class DatabaseSeeder extends Seeder {
         $this->command->info('Printing Types table seeded !');
         $this->call('SkillsTableSeeder');
         $this->command->info('Skills table seeded !');
+        $this->call('RepresentersTableSeeder');
+        $this->command->info('Representers table seeded !');
         $this->call('ArtistsTableSeeder');
         $this->command->info('Artist table seeded !');
         $this->call('ImagesTableSeeder');
@@ -79,10 +81,6 @@ class DatabaseSeeder extends Seeder {
         $this->command->info('Lineup table seeded !');
         $this->call('UsersTableSeeder');
         $this->command->info('User table seeded !');
-        
-        
-	$this->call('RepresentersTableSeeder');
-        $this->command->info('Representers table seeded !');
         //$this->call('');
         //$this->command->info('table seeded !');
         

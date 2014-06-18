@@ -77,9 +77,16 @@ class DatabaseSeeder extends Seeder {
         $this->command->info('Performer table seeded !');
         $this->call('LineupsTableSeeder');
         $this->command->info('Lineup table seeded !');
+        $this->call('UsersTableSeeder');
+        $this->command->info('User table seeded !');
+        
+        
+	$this->call('RepresentersTableSeeder');
+        $this->command->info('Representers table seeded !');
         //$this->call('');
         //$this->command->info('table seeded !');
-	}
+        
+        }
 }
 
 

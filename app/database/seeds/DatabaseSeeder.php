@@ -53,9 +53,9 @@ class DatabaseSeeder extends Seeder {
         $this->command->info('Members table seeded !');
         $this->call('GroupsTableSeeder');
         $this->command->info('Groups table seeded !');
-        $this->call('ArtistsGenresTableSeeder');
-        $this->command->info('Artists Genres table seeded !');
-        $this->call('SharingTableSeeder');
+        $this->call('DescriptionTableSeeder');
+        $this->command->info('Description table seeded !');
+        $this->call('SharingsTableSeeder');
         $this->command->info('Sharings table seeded !');
         $this->call('TicketsTableSeeder');
         $this->command->info('Tickets table seeded !');
@@ -67,14 +67,16 @@ class DatabaseSeeder extends Seeder {
         $this->command->info('Printings table seeded !');
         $this->call('FulfillmentsTableSeeder');
         $this->command->info('Fulfillments table seeded !');
-        $this->call('EventNeedsTableSeeder');
-        $this->command->info('Event Needstable seeded !');
+        $this->call('NeedsTableSeeder');
+        $this->command->info('Needs table seeded !');
         $this->call('StaffsTableSeeder');
         $this->command->info('table seeded !');
         $this->call('GroupResourcesTableSeeder');
         $this->command->info('Resource table seeded !');
-        //$this->call('');
-        //$this->command->info('table seeded !');
+        $this->call('PerformersTableSeeder');
+        $this->command->info('Performer table seeded !');
+        $this->call('LineupsTableSeeder');
+        $this->command->info('Lineup table seeded !');
         //$this->call('');
         //$this->command->info('table seeded !');
 	}

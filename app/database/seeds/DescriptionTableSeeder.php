@@ -3,7 +3,7 @@
 use rockit\Event;
 
 //artists_genres
-class ArtistsGenresTableSeeder extends Seeder {
+class DescriptionTableSeeder extends Seeder {
 
     public function run()
     {

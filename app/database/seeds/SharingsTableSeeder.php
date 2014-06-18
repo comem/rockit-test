@@ -3,7 +3,7 @@
 use rockit\Event;
 
 //sharings
-class SharingTableSeeder extends Seeder {
+class SharingsTableSeeder extends Seeder {
 
     public function run()
     {

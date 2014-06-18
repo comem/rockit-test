@@ -3,7 +3,7 @@
 use rockit\Event;
 
 //events_needs
-class EventNeedsTableSeeder extends Seeder {
+class NeedsTableSeeder extends Seeder {
 
     public function run()
     {

@@ -18,7 +18,7 @@ class CreateForeignKeys extends Migration {
 						->onUpdate('no action');
 		});
 		Schema::table('group_resource', function(Blueprint $table) {
-			$table->foreign('ressource_id')->references('id')->on('resources')
+			$table->foreign('resource_id')->references('id')->on('resources')
 						->onDelete('no action')
 						->onUpdate('no action');
 		});
@@ -112,12 +112,12 @@ class CreateForeignKeys extends Migration {
 						->onDelete('no action')
 						->onUpdate('no action');
 		});
-		Schema::table('Sharings', function(Blueprint $table) {
+		Schema::table('sharings', function(Blueprint $table) {
 			$table->foreign('platform_id')->references('id')->on('platforms')
 						->onDelete('no action')
 						->onUpdate('no action');
 		});
-		Schema::table('Sharings', function(Blueprint $table) {
+		Schema::table('sharings', function(Blueprint $table) {
 			$table->foreign('event_id')->references('id')->on('events')
 						->onDelete('no action')
 						->onUpdate('no action');
@@ -193,7 +193,7 @@ class CreateForeignKeys extends Migration {
 			$table->dropForeign('group_resource_group_id_foreign');
 		});
 		Schema::table('group_resource', function(Blueprint $table) {
-			$table->dropForeign('group_resource_ressource_id_foreign');
+			$table->dropForeign('group_resource_resource_id_foreign');
 		});
 		Schema::table('users', function(Blueprint $table) {
 			$table->dropForeign('users_language_id_foreign');
@@ -249,11 +249,11 @@ class CreateForeignKeys extends Migration {
 		Schema::table('tickets', function(Blueprint $table) {
 			$table->dropForeign('tickets_event_id_foreign');
 		});
-		Schema::table('Sharings', function(Blueprint $table) {
-			$table->dropForeign('Sharings_platform_id_foreign');
+		Schema::table('sharings', function(Blueprint $table) {
+			$table->dropForeign('sharings_platform_id_foreign');
 		});
-		Schema::table('Sharings', function(Blueprint $table) {
-			$table->dropForeign('Sharings_event_id_foreign');
+		Schema::table('sharings', function(Blueprint $table) {
+			$table->dropForeign('sharings_event_id_foreign');
 		});
 		Schema::table('events', function(Blueprint $table) {
 			$table->dropForeign('events_event_type_id_foreign');

@@ -14,6 +14,7 @@ class CreateResourcesTable extends Migration {
 			$table->timestamps();
 			$table->softDeletes();
 			$table->unique( array('verb','url') );
+
 		});
 	}
 

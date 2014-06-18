@@ -9,7 +9,7 @@ class CreateGroupResourceTable extends Migration {
 	{
 		Schema::create('group_resource', function(Blueprint $table) {
 			$table->integer('group_id')->unsigned();
-			$table->integer('ressource_id')->unsigned();
+			$table->integer('resource_id')->unsigned();
 		});
 	}
 

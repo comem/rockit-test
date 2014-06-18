@@ -11,7 +11,7 @@ class CreateGroupsTable extends Migration {
 			$table->increments('id');
 			$table->timestamps();
 			$table->softDeletes();
-			$table->integer('group_id')->unsigned();
+			$table->integer('group_id')->unsigned()->nullable();
 			$table->string('name_de', 100);
 		});
 	}

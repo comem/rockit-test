@@ -10,7 +10,6 @@ class UsersTableSeeder extends Seeder {
     {
         $language = Language::all();
         
-
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         DB::table('users')->delete();
 

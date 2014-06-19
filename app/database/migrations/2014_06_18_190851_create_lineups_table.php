@@ -14,6 +14,7 @@ class CreateLineupsTable extends Migration {
 			$table->integer('instrument_id')->unsigned();
 			$table->unique( array('musician_id','artist_id','instrument_id') );
 
+
 		});
 	}
 

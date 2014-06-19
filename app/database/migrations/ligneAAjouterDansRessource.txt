@@ -1,8 +1,7 @@
 
 Ressources: 
 
-$table->unique( array('verb','url') );
-
+$table->unique( array('method','controller') );
 
 Representer:
 

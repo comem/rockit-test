@@ -28,9 +28,9 @@ class Artist extends \Eloquent {
 		return $this->hasMany('Image');
 	}
 
-	public function musicians()
+	public function lineups()
 	{
-		return $this->belongsToMany('Musician');
+		return $this->hasMany('Lineup');
 	}
 
 	public function events()
